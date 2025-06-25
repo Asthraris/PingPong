@@ -1,6 +1,6 @@
 # 🏓 2D Ping Pong Game (Raylib)
 
-![Gameplay Preview](./pingdemo.gif) <!-- Replace with your actual GIF path -->
+![Gameplay Preview](pingdemo.gif) <!-- Replace with your actual GIF path -->
 
 A fast, minimalistic, and addictive 2D Ping Pong game built using the lightweight C-based graphics library **Raylib**. This game features a responsive game loop with start, pause, and restart mechanics, a high-accuracy AI opponent, and a smooth 120 FPS capped experience to reduce system load.
 

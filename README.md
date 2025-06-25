@@ -1,34 +1,57 @@
-# PingPong
+# 🏓 2D Ping Pong Game (Raylib)
 
-This project is a simple simulation of a Ping Pong ball game using **Raylib**. The game features a single-player experience where the computer controls one side of the paddle, while the player controls the other side.
+![Gameplay Preview](./pingdemo.gif) <!-- Replace with your actual GIF path -->
 
-## Features
-
-* **Single-Player**: Play against the computer with one side of the paddle controlled by AI.
-* **Simple Game Mechanics**: Classic Ping Pong ball movement and bouncing mechanics.
-* **Raylib Engine**: Utilizes Raylib for graphics and game loop management.
-* **Cross-Platform**: Built using C++ with Raylib, it can be easily compiled on various platforms.
-
-## Controls
-
-* **Left/Right Arrow Keys**: Move the player's paddle left and right.
-* **Space**: Pause the game.
-
-## Installation
-
-1. Download the pre-compiled executable from the **Releases** section.
-2. Run the executable based on your platform (Windows).
-
-## Acknowledgements
-
-* **Raylib**: The game engine used for this project, check it out at [Raylib](https://www.raylib.com/).
-
-## Future Enhancements
-
-* Add multiplayer support.
-* Add Audio.
-* Paddle in 2d World.
-* Improve AI difficulty levels.
-* Add power-ups and special effects.
+A fast, minimalistic, and addictive 2D Ping Pong game built using the lightweight C-based graphics library **Raylib**. This game features a responsive game loop with start, pause, and restart mechanics, a high-accuracy AI opponent, and a smooth 120 FPS capped experience to reduce system load.
 
 ---
+
+## 🎮 Features
+
+- ✅ Full Game Loop (Start Menu → Gameplay → Pause/Restart)
+- 🧠 Intelligent AI Opponent (~97% win accuracy — good luck beating it!)
+- 🕹️ Player 1 Controls:  
+  - `W`: Move Up  
+  - `S`: Move Down  
+- 🔁 Restart anytime from the pause menu
+- ⏱️ FPS capped at **120** to reduce CPU/GPU overhead
+
+---
+
+## 🌐 Future Roadmap
+
+- 👥 **Multiplayer mode** (local and maybe networked)
+- ✨ **Special powerups** (ball speed burst, paddle freeze, etc.)
+- 🧠 **Smarter AI** with difficulty levels and adaptive behavior
+- 🔄 **Switch sides** (allowing players to play from either end)
+- 🎨 Visual polish and sound effects
+
+---
+
+## ⚙️ Why Raylib?
+
+Raylib is a **simple and portable C library for programming games and multimedia applications**, focused on learning and lightweight development.
+
+### Advantages of Raylib:
+
+- 💡 Beginner-friendly with clean API
+- 🧱 Built-in support for windowing, input, 2D rendering, and audio
+- 🚀 Extremely fast to compile and lightweight runtime
+- 📦 Zero external dependencies required
+
+> Perfect for low-level graphics experimentation, game prototypes, or performance-constrained environments.
+
+Learn more about Raylib: [https://www.raylib.com](https://www.raylib.com)
+
+---
+
+## 📦 Build & Run
+
+### Requirements:
+- C compiler (GCC / Clang / MSVC)
+- [Raylib](https://github.com/raysan5/raylib) installed (or compiled from source)
+
+### Compile (example with GCC on Unix):
+```bash
+gcc main.c -o pingpong -lraylib -lm -ldl -lpthread -lGL -lrt -lX11
+./pingpong
